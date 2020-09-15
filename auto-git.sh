@@ -16,9 +16,8 @@ do
         echo "${GREEN}This is the current Repo Status"
         git status
         git add .;
-        git commit -m "This commit is made by Auto-Git, Commit Number $n"
+        git commit -m "This commit is made by Auto-Git"
         git push
-        $n = $n+1
         echo "Commit Made"
     else
         echo "${RED}Fatal! This is Not a Git Repo"
