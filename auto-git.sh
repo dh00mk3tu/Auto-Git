@@ -13,14 +13,14 @@ do
     if [ -d .git ]; then
         GREEN='\033[1;32m'
         $n = 1
-        echo "${GREEN}This is the current Repo Status"
+        echo "${GREEN}This is the current Repo Status ${NOCOLOR}"
         git status
         git add .;
         git commit -m "This commit is made by Auto-Git"
         git push
         echo "Commit Made"
     else
-        echo "${RED}Fatal! This is Not a Git Repo"
+        echo "${RED}Fatal! This is Not a Git Repo ${NOCOLOR}"
         git rev-parse --git-dir 2> /dev/null;
     fi;
     d=$(($inter * 60));
