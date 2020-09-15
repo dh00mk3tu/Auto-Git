@@ -12,3 +12,4 @@ Works flawlessly on Linux.
 ```
 4. The script will ask you, in what interval do you want to push the code. This means that, if you enter the value '1', the script will push code in every 1 minute.
 5. Minimize this terminal window and keep working on your Project, the script will push the code automatically as you work
+6. Close the scrip by "ctrl+c" or by simply closing the terminal Window/Tab
