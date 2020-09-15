@@ -16,7 +16,7 @@ do
         git commit -m "This commit is made by Auto-Git $n"
         git push
         echo "Commit $n Made"
-        $N=$(("$N" + 1));
+        n=$(($n + 1));
     else
         echo "Fatal! This is Not a Git Repo"
         git rev-parse --git-dir 2> /dev/null;
