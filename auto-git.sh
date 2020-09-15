@@ -7,9 +7,6 @@ while :
 
 do 
     if [ -d .git ]; then
-        
-        $STR = "Test"
-        echo $STR
         echo "This is the current Repo Status"
         git status
         git add .;
