@@ -9,7 +9,8 @@ do
         echo "Git Repo Found"
         echo "This is the current Repo Status"
         git add .;
-        git 
+        git commit -m "This commit is made by Auto-Git"
+        git push
     else
         echo "Not a Git Repo"
         git rev-parse --git-dir 2> /dev/null;
