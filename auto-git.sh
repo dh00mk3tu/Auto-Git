@@ -17,6 +17,7 @@ do
         git push
         echo "Commit $n Made"
         n=$(($n + 1));
+        echo $n
     else
         echo "Fatal! This is Not a Git Repo"
         git rev-parse --git-dir 2> /dev/null;
