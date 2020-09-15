@@ -1,4 +1,5 @@
 time=$(date)
+echo $time
 n=1
 echo "Auto Git"
 echo "This script is now monitoring this current directory"
