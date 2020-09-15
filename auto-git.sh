@@ -1,4 +1,4 @@
-N = 1
+$N = 1
 echo "Auto Git"
 echo "This script is now monitoring this current directory"
 echo "Enter the update interval between each push (Eg. 1 = 1 min)"
