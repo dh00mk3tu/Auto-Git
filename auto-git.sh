@@ -1,4 +1,6 @@
 
+n=1
+echo $n
 echo "Auto Git"
 echo "This script is now monitoring this current directory"
 echo "Enter the update interval between each push (Eg. 1 = 1 min)"
@@ -7,6 +9,7 @@ while :
 
 do 
     if [ -d .git ]; then
+        echo $n  
         echo "This is the current Repo Status"
         git status
         git add .;
