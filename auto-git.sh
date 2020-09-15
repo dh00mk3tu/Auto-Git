@@ -1,3 +1,8 @@
+RED='\033[1;31m'
+GREEN='\033[1;32m'
+NOCOLOR='\033[0m'
+
+
 echo "Auto Git"
 echo "This script is now monitoring this current directory"
 echo "Enter the update interval between each push (Eg. 1 = 1 min)"
@@ -6,13 +11,15 @@ while :
 
 do 
     if [ -d .git ]; then
-        echo "Git Repo Found"
-        echo "This is the current Repo Status"
+        n = 1
+        echo "${GREEN}This is the current Repo Status"
+        git status
         git add .;
         git commit -m "This commit is made by Auto-Git"
         git push
+        echo "Made "
     else
-        echo "Not a Git Repo"
+        echo "${RED}Fatal! This is Not a Git Repo"
         git rev-parse --git-dir 2> /dev/null;
     fi;
     d=$(($inter * 60));
