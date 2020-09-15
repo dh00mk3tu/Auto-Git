@@ -18,7 +18,7 @@ do
         git add .;
         git commit -m "This commit is made by Auto-Git, Commit Number $n"
         git push
-        echo "Made "
+        echo "Commit Made"
     else
         echo "${RED}Fatal! This is Not a Git Repo"
         git rev-parse --git-dir 2> /dev/null;
