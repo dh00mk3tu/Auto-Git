@@ -1,4 +1,4 @@
-STR = "Test"
+
 echo "Auto Git"
 echo "This script is now monitoring this current directory"
 echo "Enter the update interval between each push (Eg. 1 = 1 min)"
@@ -7,6 +7,7 @@ while :
 
 do 
     if [ -d .git ]; then
+        STR = "Test"
         echo "$STR"
         echo "This is the current Repo Status"
         git status
