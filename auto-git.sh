@@ -21,12 +21,18 @@ do
         echo "|| This is the current Repo Status ||"
         echo "====================================="
         git status
+        echo "-------------------------------------"
         git add .
         git commit -m "This commit is made by Auto-Git. Commit-$n, $time"
         git push
         echo "--------------------"
         echo "|| Commit $n Made ||"
         echo "--------------------"
+        # echo "-------------------------"
+        # echo "|| No Changes to Commit||"
+        # echo "-------------------------"
+        # git commit -m "This commit is made by Auto-Git. Commit-$n, $time"
+
         n=$(($n + 1));
     else
         echo "==================================="
