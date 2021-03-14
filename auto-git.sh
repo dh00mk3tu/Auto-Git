@@ -1,16 +1,21 @@
 time=$(date)
 echo $time
 n=1
-echo "Auto Git"
-echo "This script is now monitoring this current directory"
-echo "Enter the update interval between each push (Eg. 1 = 1 min)"
+echo "============================Auto Git============================"
+echo "|| This script is now monitoring this current directory       ||"
+echo "|| Enter the update interval between each push (Eg. 1 = 1 min)||"
+echo "================================================================"
+echo "==================="
 read -p "Interval Time: " inter
+echo "==================="
 while :
 
 do 
     if [ -d .git ]; then
-        echo "This is the current Repo Status"
-        git status
+        echo "==================================="
+        echo "||This is the current Repo Status||"
+        echo "==================================="
+        echo git status
         git add .;
         git commit -m "This commit is made by Auto-Git. Commit-$n, $time"
         git push
