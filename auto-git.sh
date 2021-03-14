@@ -21,7 +21,7 @@ do
         echo "|| This is the current Repo Status ||"
         echo "====================================="
         git status
-        echo "-------------------------------------"
+        echo "-------------------------------------------------------------------------------"
         git add .
         git commit -m "This commit is made by Auto-Git. Commit-$n, $time"
         git push
